@@ -1,0 +1,36 @@
+@font-face {
+  font-family: inter;
+  src: url(../Font/Inter-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+html{
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background: #ccc;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #fff;
+}
+
+#Route {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

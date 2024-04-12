@@ -1,0 +1,46 @@
+#tabCard{
+  width: 100%;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+table{
+  min-width: 1100px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+thead>tr{
+  height: 60px;
+  background: #5a93ee;
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  color: #fff;
+}
+tbody>tr{
+  height: 40px;
+}
+
+tbody>tr:nth-child(even){
+  background: #b7e0ff;
+
+}
+
+.figure{
+  height: 100px;
+  width: 100px;
+}
+
+.figure>img{
+  width: auto;
+  height: 100%;
+}
+
+tr >th{
+  padding: 10px 20px;
+}

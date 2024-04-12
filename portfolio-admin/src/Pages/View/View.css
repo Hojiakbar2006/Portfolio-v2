@@ -1,0 +1,33 @@
+#messageView {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+#messageView > h1 {
+  font-weight: 400;
+  font-size: 100px;
+  color: #101357;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#messageView > h2 {
+  font-weight: 400;
+  font-size: 50px;
+  color: #00011c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#messageView > p {
+  width: 75%;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+  margin-top: 50px;
+}

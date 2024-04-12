@@ -1,0 +1,299 @@
+#about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#about > .main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 80px;
+}
+
+.main > .left {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  
+}
+
+.main > .left > figure {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 60px;
+  transform: rotate(25deg);
+}
+
+.main > .left > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: #d9d9d9;
+  mix-blend-mode: overlay;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.right > .notice {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.right > .notice > .box {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 15px;
+  background: #00618f;
+}
+
+.notice > .box > h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.notice > .box > p {
+  color: #d1cfcf;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.right > .text {
+  width: 600px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+@media (max-width: 1600px){
+  #about > .main {
+  gap: 100px;
+  margin-top: 60px;
+}
+.main > .left {
+  width: 360px;
+  height: 360px;
+  position: relative;
+}
+
+.right > .notice > .box {
+  width: 150px;
+  height: 150px;
+}
+
+.right > .text {
+  width: 550px;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+}
+}
+
+@media (max-width: 1400px){
+  #about > .main {
+  gap: 90px;
+  margin-top: 50px;
+}
+.main > .left {
+  width: 350px;
+  height: 350px;
+}
+
+.right > .text {
+  width: 540px;
+  font-size: 20px;
+}
+}
+@media (max-width: 1300px){
+.main > .left {
+  width: 300px;
+  height: 300px;
+}
+
+.right > .text {
+  width: 500px;
+  font-size: 18px;
+}
+}
+
+@media (max-width: 1200px){
+  #about > .main {
+  gap: 80px;
+  margin-top: 50px;
+}
+.main > .left {
+  width: 280px;
+  height: 280px;
+}
+
+
+.right > .notice > .box {
+  width: 120px;
+  height: 120px;
+  gap: 10px;
+}
+
+.right > .text {
+  width: 500px;
+  color: #fff;
+  font-size: 18px;
+}
+.notice > .box > h4 {
+  font-size: 20px;
+}
+
+.notice > .box > p {
+  font-size: 12px;
+}
+}
+
+@media (max-width: 1000px){
+  #about > .main {
+  gap: 60px;
+  margin-top: 40px;
+}
+.main > .left {
+  width: 260px;
+  height: 260px;
+}
+
+.main > .left > figure {
+  border-radius: 40px;
+}
+
+.main > .left > div {
+  border-radius: 40px;
+}
+
+
+.right > .notice > .box {
+  width: 120px;
+  height: 120px;
+  gap: 10px;
+}
+
+.right > .text {
+  width: 500px;
+  font-size: 18px;
+}
+.notice > .box > h4 {
+  font-size: 20px;
+}
+
+.notice > .box > p {
+  font-size: 12px;
+}
+}
+@media (max-width: 900px){
+  #about > .main {
+  gap: 50px;
+}
+.main > .left {
+  width: 240px;
+  height: 240px;
+}
+
+.right > .text {
+  width: 400px;
+  font-size: 18px;
+}
+}
+
+
+@media (max-width: 800px){
+  #about > .main {
+  flex-direction: column;
+  gap: 40px !important;
+  margin-top: 80px;
+  gap: 100px;
+  margin-top: 30px;
+}
+.main > .left {
+  width: 200px;
+  height: 200px;
+}
+
+.right{
+  align-items: center;
+}
+
+.right > .notice > .box {
+  width: 100px;
+  height: 100px;
+}
+
+.right > .text {
+  width: 400px;
+  font-size: 15px;
+  text-align: center;
+}
+.notice > .box > h4 {
+  font-size: 16px;
+}
+
+.notice > .box > p {
+  font-size: 10px;
+}
+}
+
+@media (max-width: 600px){
+  #about > .main {
+  flex-direction: column;
+  gap: 30px !important;
+  margin-top: 80px;
+  gap: 100px;
+  margin-top: 30px;
+}
+.main > .left {
+  width: 180px;
+  height: 180px;
+}
+
+.right{
+  align-items: center;
+  gap: 20px;
+}
+
+.right > .notice > .box {
+  width: 90px;
+  height: 90px;
+}
+
+.right > .notice > .box>img{
+  width: 20px;
+}
+
+.right > .text {
+  width: 350px;
+  font-size: 14px;
+  text-align: center;
+}
+.notice > .box > h4 {
+  font-size: 14px;
+}
+
+.notice > .box > p {
+  font-size: 8px;
+}
+}

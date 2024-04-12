@@ -1,0 +1,49 @@
+#AppBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 2px solid #999;
+}
+
+.menuBtn{
+    width: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menuBtn>img{
+    width: 100%;
+}
+
+.itemCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.Search{
+    width: 230px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.189);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.Search>input{
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding-left: 20px;
+    border-right: 2px solid rgba(68, 68, 68, 0.515);
+    outline: none;
+}
+
+.messageBtn{
+    cursor: pointer;
+}

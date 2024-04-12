@@ -1,0 +1,36 @@
+.alert {
+  width: 400px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 40px;
+  left: -100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.open {
+  left: 30px;
+}
+
+.alert > span {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.success {
+  background: green;
+}
+.error {
+  background: red;
+}
+.info {
+  background: blue;
+}

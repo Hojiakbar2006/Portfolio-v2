@@ -1,0 +1,133 @@
+#project {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#project > .main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 10px;
+  gap: 60px;
+  overflow-y: auto;
+}
+
+#project > .main > .box {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #00618f;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.box > .img-box {
+  width: calc(100% - 10px);
+  aspect-ratio: 4/2.8;
+  position: absolute;
+  top: 5px;
+  border-radius: 15px;
+  transition: 0.6s;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.box > .img-box > img {
+  width: 100%;
+  height: 100%;
+  scale: 1.1;
+}
+
+#project > .main > .box:hover > .img-box {
+  top: -120px;
+  scale: 0.6;
+}
+
+.main > .box > .content {
+  position: absolute;
+  top: 255px;
+  width: 100%;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 20px;
+  gap: 10px;
+  text-align: center;
+  transition: 0.6s -.05s;
+}
+
+#project > .main > .box:hover > .content {
+  transition: 0.5s .2s;
+  top: 80px;
+  height: 250px;
+}
+.box > .content > h4 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.box > .content > p {
+  padding: 10px;
+  height: 60px;
+  color: #ddd;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 1600px){
+
+#project > .main > .box {
+  width: 300px;
+  height: 270px;
+}
+
+.main > .box > .content {
+  top: 225px;
+  height: 26px;
+}
+
+#project > .main > .box:hover > .content {
+  top: 70px;
+  height: 250px;
+}
+.box > .content > h4 {
+  font-size: 22px;
+}
+
+}
+
+@media (max-width: 1400px){
+
+#project > .main > .box {
+  width: 280px;
+  height: 260px;
+}
+
+#project > .main > .box:hover > .img-box {
+  top: -110px;
+}
+
+.main > .box > .content {
+  top: 215px;
+  height: 26px;
+}
+
+#project > .main > .box:hover > .content {
+  top: 70px;
+  height: 250px;
+}
+.box > .content > h4 {
+  font-size: 22px;
+}
+}

@@ -1,0 +1,11 @@
+#feedBack{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+}
+
+#feedBack>h1{
+    margin: 30px;
+}

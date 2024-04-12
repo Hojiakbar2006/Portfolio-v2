@@ -1,0 +1,155 @@
+@font-face {
+  font-family: jua;
+  src: url(./Assets/Font/Jua-Regular.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: jua;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+      display: none;
+}
+
+::-webkit-resizer {
+  display: none;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+  background-image: url(./Assets/Images/bg-img\ 1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head > h4 {
+  color: #000;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.head > h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 70px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.btn {
+  color: #68c7ff;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px 35px;
+  border-radius: 8px;
+  border: 2px solid rgba(104, 199, 255, 0.5);
+  background: transparent;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #68c7ff;
+  color: #00203c;
+}
+
+.btn:active {
+  background: transparent;
+  color: #68c7ff;
+}
+@media (max-width:1600px){
+  .head > h4 {
+  font-size: 20px;
+}
+
+.head > h1 {
+  font-size: 60px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn {
+  color: #68c7ff;
+  font-size: 18px;
+  padding: 8px 35px;
+}
+}
+
+@media (max-width:1400px){
+  .head > h4 {
+  font-size: 18px;
+}
+
+.head > h1 {
+  font-size: 50px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  /* margin-top: 20px; */
+}
+
+.btn {
+  color: #68c7ff;
+  font-size: 18px;
+  padding: 8px 30px;
+}
+}
+
+@media (max-width:1200px){
+.btn {
+  color: #68c7ff;
+  font-size: 16px;
+  padding: 8px 25px;
+}
+
+}
+@media (max-width:800px){
+.btn {
+  font-size: 14px;
+  padding: 6px 22px;
+}
+
+  .head > h4 {
+  font-size: 16px;
+    margin-top: 10px;
+}
+
+.head > h1 {
+  font-size: 35px;
+}
+
+
+}
